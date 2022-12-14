@@ -7,13 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>안녕 어려워 보이는 JSP!</h2>
-	<hr/>
-	현재 날짜와 시간은
-	<%=java.time.LocalDateTime.now() %>
-	입니다.
+	<h4>구구단 출력하기</h4>
 	
-	<%--주석--%>
-	<!-- 주석 -->
+	<jsp:include page="include_data.jsp">
+	
+		<jsp:param value="5" name="num"/>
+	
+	</jsp:include>
 </body>
 </html>

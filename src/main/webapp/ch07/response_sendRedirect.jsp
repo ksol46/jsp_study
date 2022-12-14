@@ -7,13 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>안녕 어려워 보이는 JSP!</h2>
-	<hr/>
-	현재 날짜와 시간은
-	<%=java.time.LocalDateTime.now() %>
-	입니다.
-	
-	<%--주석--%>
-	<!-- 주석 -->
+<% response.sendRedirect("page_control_end.jsp"); %>
+<%-- 실행된것을 다시 page_control_end.jsp 에 받아올것이다. --%>
 </body>
 </html>

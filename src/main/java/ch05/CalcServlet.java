@@ -31,11 +31,8 @@ public class CalcServlet extends HttpServlet {
 		int n1 = Integer.parseInt(request.getParameter("n1"));
 				//Integer.parseInt : int형으로 변경
 		int n2 = Integer.parseInt(request.getParameter("n2"));
-		System.out.println(n1);
-		System.out.println(n2);
 		
 		String op = request.getParameter("op"); //연산자
-		System.out.println(op);
 		
 		long result = 0; //연산의 결과를 담을 변수
 
